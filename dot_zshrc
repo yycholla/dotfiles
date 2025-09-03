@@ -8,6 +8,8 @@ fpath+=~/.zfunc
 autoload -Uz compinit
 compinit
 
+autoload wget https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh -O /usr/local/share/zsh/site-functions/_tmuxinator
+
 # Carapace configuration
 export CARAPACE_BRIDGES='zsh,fish,bash,inshellisense' # optional
 zstyle ':completions:*' format $'\e[2:37mCompleting %d\e[m'
