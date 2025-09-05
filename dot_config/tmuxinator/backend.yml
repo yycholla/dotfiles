@@ -1,0 +1,18 @@
+---
+name: backend
+project_root: "/home/chanway/Projects/MountainHR-Backend"
+enable_pane_titles: true
+windows:
+  - edit:
+      layout: main-vertical
+      panes:
+        - editor:
+            - nvim
+        - claude --continue
+  - logs:
+      layout: d7f1,266x57,0,0{133x57,0,0,28,132x57,134,0,29}
+      panes:
+        - edgedb:
+            - docker compose logs -f edgedb-dev
+        - go:
+            - docker compose logs -f go-backend-dev
